@@ -3,10 +3,6 @@ module.exports = {
     [
       "@babel/env",
       {
-        debug: true,
-        targets: {
-          node: "10",
-        },
         useBuiltIns: "usage",
         corejs: {
           version: 3,
@@ -16,7 +12,6 @@ module.exports = {
     ],
   ],
   plugins: [
-    //
-    "@babel/plugin-proposal-class-properties",
+    // "@babel/plugin-proposal-class-properties",
   ],
 };
