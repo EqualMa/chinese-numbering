@@ -21,34 +21,35 @@ yarn add chinese-numbering
 
   ```js
   const cn = require("chinese-numbering");
+  console.log(cn.numberToChinese(11));
   ```
 
 - Browser
 
   - with iife / umd bundle:
 
-    <!-- TODO  -->
-
     ```html
-    <script></script>
-    ```
-
-    ```js
-    const cn = window.ChineseNumbering;
+    <script src="https://unpkg.com/chinese-numbering@1.x/bundle/iife.js"></script>
+    <script>
+      const cn = window.ChineseNumbering;
+      alert("ChineseNumbering is formatting 11 to " + cn.numberToChinese(11));
+    </script>
     ```
 
   - with es module bundle:
 
-    <!-- TODO -->
-
     ```html
-
+    <script type="module">
+      import * as cn from "https://unpkg.com/chinese-numbering@1.x/bundle/es.js";
+      alert("ChineseNumbering is formatting 11 to " + cn.numberToChinese(11));
+    </script>
     ```
 
 - ES Modules
 
   ```js
   import * as cn from "chinese-numbering";
+  console.log(cn.numberToChinese(11));
   ```
 
 ### number to Simplified / Traditional Chinese
